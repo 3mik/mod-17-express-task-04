@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title test
+        //link(href='/lib/styles.css', rel='stylesheet')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.6/css/all.css')        
+    body
+        .container
+            .jumbotron.text-center        
+                h2 Private box to store your private stuff
+                h4
+                    span.fa.fa-lock
+                    |
+                    | Authentication required
+                h6 Log in with google
+                a.btn.btn-danger(href='/auth/google')
+                    span.fa.fa-google-plus
+                    |
+                    | Google
